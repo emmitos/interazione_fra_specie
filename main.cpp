@@ -52,5 +52,38 @@ NAMESPACE E INCLUDEGUARDS) NEL SIMULATION.CPP :
 3. calcola i nuovi xi = x0 * x_i^rel e y_i = y0 * y_i ^ rel
 4. Calcola H_i con la formula che hai
 5. salva i valori in x_vals_, y_vals_, H_vals_
+
+
+
+viene richiesto di sviluppare una simulazione che, introdotto uno stato iniziale
+(x_0,y_0) ed una serie di parametri A,B,C,D validi, utilizzi la versione  delle
+equazioni di Lotka-Volterra presentata in 1* (se ti serve te la scrivo) per
+calcolare, ad ogni passo dell'evoluzione, i valori (x_i, y_i, H_i). Dove H è
+l'integrale primo , infatti sistema è caratterizzato da un integrale primo che
+rimane costante nel tempo: H(x,y) = -Dln(x)+Cx+By-Aln(y) La durata totale della
+simulazione, espressa in multipli interi dell'unità di tempo Δt, deve essere una
+variabile che l'utente può introdurre a runtime.
+
+Oltre alle caratteristiche minime che ogni progetto deve soddisfare (ovvero
+almeno due translation unit, alcune richieste sul linguaggio e anche la
+scrittura di una serie di unit test con doctest), in questo caso sono posti
+alcuni vincoli ulteriori.
+
+In primis, la descrizione del sistema deve essere implementata tramite una
+classe Simulation la quale deve, quantomeno:
+
+- contenere un metodo evolve() che permetta di fare progredire la simulazione di
+una singola unità Δt -  ---  - mantenere al suo interno i valori assoluti (x_i,
+y_i, H_i)  per tutti gli stati di evoluzione del sistema e renderli accessibili
+all'utente per eventuali stampe su schermo o analisi. In secondo luogo, al fine
+di migliorare la stabilità del calcolo numerico, si richiede di:
+
+- utilizzare valori di  Δt dell'ordine di 0.001;
+- rappresentare internamente lo stato del sistema ad un dato istante t in
+termini di (x_i ^rel, y_i^rel)
+- implementare il metodo evolve() utilizzando la formula descritta in [1] che fa
+uso dei valori relativi (x_i ^rel, y_i^rel) [1] : x_i ^rel = x_(i-1) ^rel +
+A(1-y_(i-1) ^rel) x_(i-1) ^rel * Δt ; y_i ^rel = y_(i-1) ^rel + D(-1+x_(i-1)
+^rel) y_(i-1) ^rel * Δt
 */
 }
