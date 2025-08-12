@@ -9,8 +9,8 @@ struct State {
   double y;  // num. di predatori
   double H;  // valore integrale primo
 } class Simulation {
-  // questi sono nella parte privata di default
-  double x0, y0, dt;
+  // questi sono nella parte privata di default (definizione di classe)
+  const double x0, y0, dt;
   const double A, B, C, D;
   // double x_rel, y_rel;
   std::vector<State> states; //contenitore dinamico che salva tutti gli stati del sistema 
@@ -18,11 +18,11 @@ struct State {
   public : Simulation(double x0, double y0, double A, double B, double C,
                        double D, double dt){};  // costruttore simulation
   void evolve();  // evolve fa andare avanti la simulazione di un singolo
-                  // "passo"
+                  // "passo". Lo voglio void perche non mi deve ritornare un valore numerico
   void run(int ripetizioni);  // mette evolve in un ciclo e la fa avanzare di
                               // "ripetizioni" volte
-  const std::vector<State>& getStates()
-      const;  // Restituisce tutti gli stati calcolati fino a quel momento
+  const std::vector<State>& getStates() const;  
+    // Restituisce tutti gli stati calcolati fino a quel momento
               // (incluso lo stato iniziale).
 }
 
