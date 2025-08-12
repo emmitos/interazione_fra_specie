@@ -1,6 +1,30 @@
 #ifndef SIMULATION_HPP
 #define SIMULATION_HPP
-/*namespace sim {
-    //scrivi tutto il codice 
-}*/
+
+#include <vector>
+
+namespace sim {
+struct State {
+  double x;  // sarebbe il num. di prede (val.assoluto)
+  double y;  // num. di predatori
+  double H;  // valore integrale primo
+} class Simulation {
+  // questi sono nella parte privata di default
+  double x0, y0, dt;
+  const double A, B, C, D;
+  // double x_rel, y_rel;
+  std::vector<State> states; //contenitore dinamico che salva tutti gli stati del sistema 
+
+  public : Simulation(double x0, double y0, double A, double B, double C,
+                       double D, double dt){};  // costruttore simulation
+  void evolve();  // evolve fa andare avanti la simulazione di un singolo
+                  // "passo"
+  void run(int ripetizioni);  // mette evolve in un ciclo e la fa avanzare di
+                              // "ripetizioni" volte
+  const std::vector<State>& getStates()
+      const;  // Restituisce tutti gli stati calcolati fino a quel momento
+              // (incluso lo stato iniziale).
+}
+
+}  // fine namespace sim
 #endif

@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "simulation.hpp"
 int main() {
   /* quando fai i nuovi file.hpp e .cpp ricordati di modificare il
@@ -14,10 +15,6 @@ principali che saranno x0, y0, A, B , C , D, delta t ( e gli step?) e poi li
 esegui : chat dice di fare qualcosa del genere : Simulation sim(x0, y0, A, B, C,
 D, dt, steps); sim.run(); auto x = sim.get_x(); auto y = sim.get_y(); auto H =
 sim.get_H();
-
-mentre ti dice di fare un file simulation.cpp, simulation.hpp e test.cpp
-in simulation.hpp qualcosa el genere : #ifndef SIMULATION_HPP
-#define SIMULATION_HPP
 
 #include <vector>
 
@@ -88,9 +85,12 @@ A(1-y_(i-1) ^rel) x_(i-1) ^rel * Δt ; y_i ^rel = y_(i-1) ^rel + D(-1+x_(i-1)
 ^rel) y_(i-1) ^rel * Δt
 */
 
-  double x0, y0, A, B, C, D, dt;
+  double x0, y0, A, B, C, D, dt;  // non so se questi vanno in un namspace...non credo ma bohhhh
   int ripetizioni;
-  std::cout << "Inserisci lo stato iniziale x0 ed y0 : " << '\n';
+  std::cout
+      << "Inserisci lo stato iniziale x0 ed y0, dove x0 è la densità delle "
+         "prede allo stato iniziale e y0 la densità dei predatori : "
+      << '\n';
   std::cin >> x0 >> y0;
   std::cout << "Inserisci i parametri A, B, C, D. Dove i parametri A e C "
                "indicano quanto "
@@ -103,7 +103,7 @@ A(1-y_(i-1) ^rel) x_(i-1) ^rel * Δt ; y_i ^rel = y_(i-1) ^rel + D(-1+x_(i-1)
   std::cin >> A >> B >> C >> D;
   if (A <= 0 || B <= 0 || C <= 0 || D <= 0) {
     throw std::runtime_error{
-        "I numeri A, B, C, D devono essere maggiori di zero"};
+        "I numeri A, B, C, D devono essere reali e maggiori di zero"};
   }
   std::cout << "Inserisci il dt, ovvero l'intervallo temporale nel quale si "
                "vuole fare la "
@@ -112,7 +112,7 @@ A(1-y_(i-1) ^rel) x_(i-1) ^rel * Δt ; y_i ^rel = y_(i-1) ^rel + D(-1+x_(i-1)
   std::cin >> dt;
   if (dt <= 0) {
     throw std::runtime_error{
-        " L'intervallo temporale deve essere maggiore di zero "};
+        " L'intervallo temporale deve essere valido e maggiore di zero "};
   }
   std::cout << "Inserire le ripetizioni del dt per fare evolvere il sistema. "
                "La durata "
