@@ -37,7 +37,9 @@ find_package(SFML 2.6 COMPONENTS graphics REQUIRED)
 
 # dichiara un eseguibile chiamato "progetto", prodotto a partire dai file sorgente indicati
 # sostituire "progetto" con il nome del proprio eseguibile e i file sorgente con i propri (con nomi sensati!)
-add_executable(interazione_fra_specie main.cpp simulation.cpp )
+add_executable(interazione_fra_specie main.cpp simulation.cpp)
+add_executable(simulation_test test.cpp simulation.cpp)
+
 # nel caso si usi SFML. analogamente per eventuali altre librerie
 target_link_libraries(interazione_fra_specie PRIVATE sfml-graphics)
 
@@ -45,11 +47,12 @@ target_link_libraries(interazione_fra_specie PRIVATE sfml-graphics)
 
 # il testing e' abilitato di default
 # per disabilitarlo, passare -DBUILD_TESTING=OFF a cmake durante la fase di configurazione (rimetti poi BUILD_TESTING)
-if (-DBUILD_TESTING=OFF)
-
+if (BUILD_TESTING)
+enable_testing()
+# aggiungi l'eseguibile progetto.t alla lista dei test
+  add_test(NAME simulation_test COMMAND simulation_test)
   # aggiungi l'eseguibile progetto.t
-  add_executable(interazione_fra_specie.t)
-  # aggiungi l'eseguibile progetto.t alla lista dei test
-  add_test(NAME interazione_fra_specie.t COMMAND interazione_fra_specie.t)
+  #add_executable(interazione_fra_specie.t)
+  
 
 endif()

@@ -11,8 +11,9 @@ struct State {
 };
 class Simulation {
   // questi sono nella parte privata di default (definizione di classe)
-  const double x0, y0, dt;
+  const double x0, y0;
   const double A, B, C, D;
+  const double dt;
   double x_rel, y_rel;
   std::vector<State> states;  // creo un vettore contenitore dinamico che salva
                               // tutti gli stati del sistema e lo chiamo states

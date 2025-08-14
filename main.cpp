@@ -27,20 +27,21 @@ CMakeLists.txt(in realtà solo coin i .cpp tanto gli altri sono inclusi
                "delle due specie. C'è "
                " la specie delle prede e la specie dei predatori. "
             << '\n';
+  //MA X0 E Y0 POSSONO ESSERE NEGATIVE????NO 
   std::cin >> A >> B >> C >> D;
-  if (A <= 0 || B <= 0 || C <= 0 || D <= 0) {
+  /*if (A <= 0 || B <= 0 || C <= 0 || D <= 0) {
     throw std::runtime_error{
         "I numeri A, B, C, D devono essere reali e maggiori di zero"};
-  }
+  }*/
   std::cout << "Inserisci il dt, ovvero l'intervallo temporale nel quale si "
                "vuole fare la "
                "simulazione. Sceglierlo dell'ordine di 0.001 : "
             << '\n';
   std::cin >> dt;
-  if (dt <= 0) {
+  /*if (dt <= 0) {
     throw std::runtime_error{
         " L'intervallo temporale deve essere valido e maggiore di zero "};
-  }
+  }*/
   std::cout << "Inserire le ripetizioni del dt per fare evolvere il sistema. "
                "La durata "
                " totale della simulazione sarà questo valore moltiplicato per "
