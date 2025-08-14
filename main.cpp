@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 
 #include "simulation.hpp"
@@ -8,13 +9,6 @@ CMakeLists.txt(in realtà solo coin i .cpp tanto gli altri sono inclusi
   PER COMPILARE : se hai modificato il CMakeLists allora fai : cmake ..
   poi SEMPRE devi fare  : cmake --build . ( per compilare)
   (per eseguire) : ./interazione_fra_specie
-
-
-  qua pratocamente nel main voglio fare inserire all'utente i miei parametri
-principali che saranno x0, y0, A, B , C , D, delta t ( e gli step?) e poi li
-esegui : chat dice di fare qualcosa del genere : Simulation sim(x0, y0, A, B, C,
-D, dt, steps); sim.run(); auto x = sim.get_x(); auto y = sim.get_y(); auto H =
-sim.get_H();
 */
 
   double x0, y0, A, B, C, D,
@@ -59,11 +53,31 @@ sim.get_H();
 
   // Stampa risultati
   const auto& results = sim.getStates();
-  std::cout << "Risultati simulazione";
-  std::cout << "Passo\tPrede (x)\tPredatori (y)\tH(x,y)\n";
+  /* così me li stampava tutti sminchiati
+  std::cout << "Risultati simulazione  : " << '\n';
+  std::cout << "Passo \t Prede (x) \t Predatori (y) \t H(x,y) \n";
 
   for (std::size_t i = 0; i < results.size(); ++i) {
-    std::cout << i << '\t' << results[i].x << '\t' << results[i].y << '\t'
+    std::cout << i << results[i].x << '\n';
+    std::cout << i << results[i].y << '\n';
+    std::cout << i << results[i].H << '\n';
+  } */
+  std::cout << "Risultati simulazione:";
+  std::cout << std::setw(6) << "Passo" << std::setw(12) << "Tempo"
+            << std::setw(15) << "Prede (x)" << std::setw(18) << "Predatori (y)"
+            << std::setw(15) << "H(x,y)" << '\n';
+
+  /*std::setw imposta la larghezza della colonna, std::precision controlla il
+  numero di cifre decimali e poi std::fixed mantiene sempre lo stessso formato
+  digitale*/
+
+  for (std::size_t i = 0; i < results.size(); ++i) {
+    double time = i * dt;
+    std::cout << std::setw(6) << i << std::setw(12) << std::fixed
+              << std::setprecision(4) << time << std::setw(15) << std::fixed
+              << std::setprecision(6) << results[i].x << std::setw(18)
+              << std::fixed << std::setprecision(6) << results[i].y
+              << std::setw(15) << std::fixed << std::setprecision(6)
               << results[i].H << '\n';
   }
 

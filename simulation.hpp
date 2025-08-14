@@ -15,7 +15,7 @@ class Simulation {
   const double A, B, C, D;
   double x_rel, y_rel;
   std::vector<State> states;  // creo un vettore contenitore dinamico che salva
-                              // tutti gli stati del sistema
+                              // tutti gli stati del sistema e lo chiamo states
 
  public:
   Simulation(double x0_, double y0_, double A_, double B_, double C_, double D_,
