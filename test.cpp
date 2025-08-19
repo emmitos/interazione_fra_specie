@@ -38,15 +38,19 @@ TEST_CASE("controllo stato iniziale") {
   }
 
 TEST_CASE("controllo dei valori negativi o nulli dei parametri di input") {
+    CHECK_THROWS(sim::SimulationParameters(-2.0, 2.5, 10.0, 4.0, 0.2, 8.0, 0.0003)); // x0 negativa
+    CHECK_THROWS(sim::SimulationParameters(1.0, -2.5, 10.0, 4.0, 0.2, 8.0, 0.0003)); // y0 negativa
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, -10.0, 4.0, 0.2, 8.0, 0.0003)); //A negativa
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 10.0, -4.0, 0.2, 8.0, 0.0003)); //B negativa
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 10.0, 4.0, -0.2, 8.0, 0.0003)); //C negativa
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 10.0, 4.0, 0.2, -8.0, 0.0003)); //D negativa
+    CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 4.0, 4.0, 3.0, 8.0, -0.0003)); //dt negativo
+    CHECK_THROWS(sim::SimulationParameters(0.0, 2.5, 10.0, 4.0, 0.2, 8.0, 0.0003)); // x0 = 0
+    CHECK_THROWS(sim::SimulationParameters(1.0, 0.0, 10.0, 4.0, 0.2, 8.0, 0.0003)); // y0 = 0
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 0.0, 4.0, 0.2, 8.0, 0.0003)); // A = 0
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 3.0, 0.0, 0.2, 8.0, 0.0003)); // B = 0
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 3.0, 4.0, 0.0, 8.0, 0.0003)); // C = 0
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 3.0, 4.0, 0.2, 0.0, 0.0003)); // D = 0
-    CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 4.0, 4.0, 3.0, 8.0, -0.0003)); //dt negativo
     CHECK_THROWS(sim::SimulationParameters(1.0, 2.5, 4.0, 4.0, 3.0, 8.0, 0.0)); // dt = 0
     
 }

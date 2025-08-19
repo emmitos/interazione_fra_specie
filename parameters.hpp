@@ -3,9 +3,9 @@
 namespace sim {
 class SimulationParameters {
  public:
-  double x0, y0;
-  double A, B, C, D;
-  double dt;
+  const double x0, y0;
+  const double A, B, C, D;
+  const double dt;
 
   SimulationParameters(double x0_, double y0_, double A_, double B_, double C_,
                        double D_, double dt_);

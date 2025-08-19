@@ -28,13 +28,21 @@ CMakeLists.txt(in realtà solo coin i .cpp tanto gli altri sono inclusi
                "delle due specie. C'è "
                " la specie delle prede e la specie dei predatori. "
             << '\n';
-  // MA X0 E Y0 POSSONO ESSERE NEGATIVE????NO
+  if (!(std::cin >> x0 >> y0)) {
+    std::cerr << "Errore: input non valido per x0 o y0\n";
+    return 1;
+}
   std::cin >> A >> B >> C >> D;
   std::cout << "Inserisci il dt, ovvero l'intervallo temporale nel quale si "
                "vuole fare la "
                "simulazione. Sceglierlo dell'ordine di 0.001 : "
             << '\n';
   std::cin >> dt;
+  if (dt > 0.01) {
+    std::cerr
+        << "Warning :  un dt elevato potrebbe causare instabilità numerica."
+        << '\n';
+  }
   std::cout << "Inserire le ripetizioni del dt per fare evolvere il sistema. "
                "La durata "
                " totale della simulazione sarà questo valore moltiplicato per "
