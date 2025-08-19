@@ -1,9 +1,10 @@
 #ifndef SIMULATION_HPP
 #define SIMULATION_HPP
-
+#include "parameters.hpp"
 #include <vector>
 
 namespace sim {
+
 struct State {
   double x;  // sarebbe il num. di prede (val.assoluto)
   double y;  // num. di predatori
@@ -11,16 +12,18 @@ struct State {
 };
 class Simulation {
   // questi sono nella parte privata di default (definizione di classe)
-  const double x0, y0;
+  /*const double x0, y0;
   const double A, B, C, D;
   const double dt;
-  double x_rel, y_rel;
+  double x_rel, y_rel;*/
+
+  SimulationParameters params;
+  RelativeParameters state;
   std::vector<State> states;  // creo un vettore contenitore dinamico che salva
                               // tutti gli stati del sistema e lo chiamo states
 
  public:
-  Simulation(double x0_, double y0_, double A_, double B_, double C_, double D_,
-             double dt_);  // costruttore simulation
+  Simulation(const SimulationParameters& parameters);  // costruttore simulation
   void evolve();  // evolve fa andare avanti la simulazione di un singolo
                   // "passo". Lo voglio void perche non mi deve ritornare un
                   // valore numerico

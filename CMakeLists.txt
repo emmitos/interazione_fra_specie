@@ -37,8 +37,8 @@ find_package(SFML 2.6 COMPONENTS graphics REQUIRED)
 
 # dichiara un eseguibile chiamato "progetto", prodotto a partire dai file sorgente indicati
 # sostituire "progetto" con il nome del proprio eseguibile e i file sorgente con i propri (con nomi sensati!)
-add_executable(interazione_fra_specie main.cpp simulation.cpp)
-add_executable(simulation_test test.cpp simulation.cpp)
+add_executable(interazione_fra_specie main.cpp simulation.cpp parameters.cpp)
+add_executable(simulation_test test.cpp simulation.cpp parameters.cpp)
 
 # nel caso si usi SFML. analogamente per eventuali altre librerie
 target_link_libraries(interazione_fra_specie PRIVATE sfml-graphics)

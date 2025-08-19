@@ -1,6 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
+// #include "parameters.hpp"
 #include "simulation.hpp"
 int main() {
   /* quando fai i nuovi file.hpp e .cpp ricordati di modificare il
@@ -27,43 +28,42 @@ CMakeLists.txt(in realtà solo coin i .cpp tanto gli altri sono inclusi
                "delle due specie. C'è "
                " la specie delle prede e la specie dei predatori. "
             << '\n';
-  //MA X0 E Y0 POSSONO ESSERE NEGATIVE????NO 
+  // MA X0 E Y0 POSSONO ESSERE NEGATIVE????NO
   std::cin >> A >> B >> C >> D;
-  /*if (A <= 0 || B <= 0 || C <= 0 || D <= 0) {
-    throw std::runtime_error{
-        "I numeri A, B, C, D devono essere reali e maggiori di zero"};
-  }*/
   std::cout << "Inserisci il dt, ovvero l'intervallo temporale nel quale si "
                "vuole fare la "
                "simulazione. Sceglierlo dell'ordine di 0.001 : "
             << '\n';
   std::cin >> dt;
-  /*if (dt <= 0) {
-    throw std::runtime_error{
-        " L'intervallo temporale deve essere valido e maggiore di zero "};
-  }*/
   std::cout << "Inserire le ripetizioni del dt per fare evolvere il sistema. "
                "La durata "
                " totale della simulazione sarà questo valore moltiplicato per "
                "il dt appena inserito. "
             << '\n';
   std::cin >> ripetizioni;
+  /*
+    sim::Simulation sim(x0, y0, A, B, C, D, dt);
+    sim.run(ripetizioni);
 
-  sim::Simulation sim(x0, y0, A, B, C, D, dt);
+    // Stampa risultati
+    const auto& results = sim.getStates();
+    così me li stampava tutti sminchiati :
+    std::cout << "Risultati simulazione  : " << '\n';
+    std::cout << "Passo \t Prede (x) \t Predatori (y) \t H(x,y) \n";
+
+    for (std::size_t i = 0; i < results.size(); ++i) {
+      std::cout << i << results[i].x << '\n';
+      std::cout << i << results[i].y << '\n';
+      std::cout << i << results[i].H << '\n';
+    }
+
+  */
+
+  sim::SimulationParameters params(x0, y0, A, B, C, D, dt);
+  sim::Simulation sim(params);
   sim.run(ripetizioni);
-
-  // Stampa risultati
   const auto& results = sim.getStates();
-  /* così me li stampava tutti sminchiati
-  std::cout << "Risultati simulazione  : " << '\n';
-  std::cout << "Passo \t Prede (x) \t Predatori (y) \t H(x,y) \n";
-
-  for (std::size_t i = 0; i < results.size(); ++i) {
-    std::cout << i << results[i].x << '\n';
-    std::cout << i << results[i].y << '\n';
-    std::cout << i << results[i].H << '\n';
-  } */
-  std::cout << "Risultati simulazione:";
+  std::cout << "Risultati simulazione:" << '\n';
   std::cout << std::setw(6) << "Passo" << std::setw(12) << "Tempo"
             << std::setw(15) << "Prede (x)" << std::setw(18) << "Predatori (y)"
             << std::setw(15) << "H(x,y)" << '\n';
