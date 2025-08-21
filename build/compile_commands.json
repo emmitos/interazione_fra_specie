@@ -1,0 +1,110 @@
+[
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/Debug/main.cpp.o -c /Users/emma/progetto/main.cpp",
+  "file": "/Users/emma/progetto/main.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/Debug/main.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/Debug/simulation.cpp.o -c /Users/emma/progetto/simulation.cpp",
+  "file": "/Users/emma/progetto/simulation.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/Debug/simulation.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/Debug/parameters.cpp.o -c /Users/emma/progetto/parameters.cpp",
+  "file": "/Users/emma/progetto/parameters.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/Debug/parameters.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/Release/main.cpp.o -c /Users/emma/progetto/main.cpp",
+  "file": "/Users/emma/progetto/main.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/Release/main.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/Release/simulation.cpp.o -c /Users/emma/progetto/simulation.cpp",
+  "file": "/Users/emma/progetto/simulation.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/Release/simulation.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/Release/parameters.cpp.o -c /Users/emma/progetto/parameters.cpp",
+  "file": "/Users/emma/progetto/parameters.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/Release/parameters.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O2 -g -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/RelWithDebInfo/main.cpp.o -c /Users/emma/progetto/main.cpp",
+  "file": "/Users/emma/progetto/main.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/RelWithDebInfo/main.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O2 -g -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/RelWithDebInfo/simulation.cpp.o -c /Users/emma/progetto/simulation.cpp",
+  "file": "/Users/emma/progetto/simulation.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/RelWithDebInfo/simulation.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem /opt/homebrew/opt/sfml@2/include  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O2 -g -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/interazione_fra_specie.dir/RelWithDebInfo/parameters.cpp.o -c /Users/emma/progetto/parameters.cpp",
+  "file": "/Users/emma/progetto/parameters.cpp",
+  "output": "CMakeFiles/interazione_fra_specie.dir/RelWithDebInfo/parameters.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/Debug/test.cpp.o -c /Users/emma/progetto/test.cpp",
+  "file": "/Users/emma/progetto/test.cpp",
+  "output": "CMakeFiles/simulation_test.dir/Debug/test.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/Debug/simulation.cpp.o -c /Users/emma/progetto/simulation.cpp",
+  "file": "/Users/emma/progetto/simulation.cpp",
+  "output": "CMakeFiles/simulation_test.dir/Debug/simulation.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Debug\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/Debug/parameters.cpp.o -c /Users/emma/progetto/parameters.cpp",
+  "file": "/Users/emma/progetto/parameters.cpp",
+  "output": "CMakeFiles/simulation_test.dir/Debug/parameters.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/Release/test.cpp.o -c /Users/emma/progetto/test.cpp",
+  "file": "/Users/emma/progetto/test.cpp",
+  "output": "CMakeFiles/simulation_test.dir/Release/test.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/Release/simulation.cpp.o -c /Users/emma/progetto/simulation.cpp",
+  "file": "/Users/emma/progetto/simulation.cpp",
+  "output": "CMakeFiles/simulation_test.dir/Release/simulation.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"Release\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/Release/parameters.cpp.o -c /Users/emma/progetto/parameters.cpp",
+  "file": "/Users/emma/progetto/parameters.cpp",
+  "output": "CMakeFiles/simulation_test.dir/Release/parameters.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O2 -g -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/RelWithDebInfo/test.cpp.o -c /Users/emma/progetto/test.cpp",
+  "file": "/Users/emma/progetto/test.cpp",
+  "output": "CMakeFiles/simulation_test.dir/RelWithDebInfo/test.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O2 -g -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/RelWithDebInfo/simulation.cpp.o -c /Users/emma/progetto/simulation.cpp",
+  "file": "/Users/emma/progetto/simulation.cpp",
+  "output": "CMakeFiles/simulation_test.dir/RelWithDebInfo/simulation.cpp.o"
+},
+{
+  "directory": "/Users/emma/progetto/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\"  -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O2 -g -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/simulation_test.dir/RelWithDebInfo/parameters.cpp.o -c /Users/emma/progetto/parameters.cpp",
+  "file": "/Users/emma/progetto/parameters.cpp",
+  "output": "CMakeFiles/simulation_test.dir/RelWithDebInfo/parameters.cpp.o"
+}
+]
