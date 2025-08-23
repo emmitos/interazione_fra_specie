@@ -1,5 +1,5 @@
 #include "parameters.hpp"
-#include <stdexcept> //per gli if() throw
+#include <stdexcept>
 namespace sim {
 SimulationParameters::SimulationParameters(double x0_, double y0_, double A_,
                                            double B_, double C_, double D_,
@@ -24,4 +24,4 @@ RelativeParameters::RelativeParameters(double x0, double y0, double C, double D,
                                        double B, double A)
     : x_rel(x0 * C / D), y_rel(y0 * B / A) {}
 
-}  // namespace sim
+} 

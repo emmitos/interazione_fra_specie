@@ -1,0 +1,24 @@
+Start testing: Aug 22 11:03 CEST
+----------------------------------------------------------
+1/1 Testing: simulation_test
+1/1 Test: simulation_test
+Command: "/Users/emma/progetto/build/Debug/simulation_test"
+Directory: /Users/emma/progetto/build
+"simulation_test" start time: Aug 22 11:03 CEST
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:  3 |  3 passed | 0 failed | 0 skipped
+[doctest] assertions: 21 | 21 passed | 0 failed |
+[doctest] Status: SUCCESS!
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"simulation_test" end time: Aug 22 11:03 CEST
+"simulation_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 22 11:03 CEST

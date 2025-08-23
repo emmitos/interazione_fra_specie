@@ -4,13 +4,14 @@ namespace sim {
 Simulation::Simulation(const SimulationParameters& parameters)
     : params(parameters),
 state(parameters.x0, parameters.y0, parameters.C, parameters.D, parameters.B,
-      parameters.A) {
+      parameters.A) {   
   double H0 = calcolo_H(state.x_rel, state.y_rel);
   states.push_back({state.x_rel, state.y_rel, H0});
 }
 
 double Simulation::calcolo_H(double x, double y) const {
   return -params.D * std::log(x) + params.C * x + params.B * y - params.A * std::log(y);
+
 }
 
 void Simulation::evolve() {
@@ -19,17 +20,20 @@ void Simulation::evolve() {
 
   state.x_rel = std::abs(x_next);
   state.y_rel = std::abs(y_next);
-
+  
   double H = calcolo_H(state.x_rel, state.y_rel);
-  states.push_back({state.x_rel, state.y_rel, H});
+  states.push_back({state.x_rel, state.y_rel, H}); 
 }
 
 void Simulation::run(int ripetizioni) {
+  if (ripetizioni < 0) {
+        throw std::runtime_error{"Il numero di ripetizioni deve essere non negativo"};
+    }
+  
   for (int i = 0; i < ripetizioni; ++i) {
     evolve();
   }
 }
-
 const std::vector<State>& Simulation::getStates() const {
   return states;
 }

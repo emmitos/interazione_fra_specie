@@ -218,8 +218,6 @@ build CMakeFiles/interazione_fra_specie.dir/Release/main.cpp.o: CXX_COMPILER__in
   INCLUDES = -isystem /opt/homebrew/opt/sfml@2/include
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Release
   OBJECT_FILE_DIR = CMakeFiles/interazione_fra_specie.dir/Release
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Release/
-  TARGET_PDB = Release/interazione_fra_specie.pdb
 
 build CMakeFiles/interazione_fra_specie.dir/Release/simulation.cpp.o: CXX_COMPILER__interazione_fra_specie_unscanned_Release /Users/emma/progetto/simulation.cpp || cmake_object_order_depends_target_interazione_fra_specie_RELEASE
   DEFINES = -DCMAKE_INTDIR=\"Release\"
@@ -228,8 +226,6 @@ build CMakeFiles/interazione_fra_specie.dir/Release/simulation.cpp.o: CXX_COMPIL
   INCLUDES = -isystem /opt/homebrew/opt/sfml@2/include
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Release
   OBJECT_FILE_DIR = CMakeFiles/interazione_fra_specie.dir/Release
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Release/
-  TARGET_PDB = Release/interazione_fra_specie.pdb
 
 build CMakeFiles/interazione_fra_specie.dir/Release/parameters.cpp.o: CXX_COMPILER__interazione_fra_specie_unscanned_Release /Users/emma/progetto/parameters.cpp || cmake_object_order_depends_target_interazione_fra_specie_RELEASE
   DEFINES = -DCMAKE_INTDIR=\"Release\"
@@ -238,8 +234,6 @@ build CMakeFiles/interazione_fra_specie.dir/Release/parameters.cpp.o: CXX_COMPIL
   INCLUDES = -isystem /opt/homebrew/opt/sfml@2/include
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Release
   OBJECT_FILE_DIR = CMakeFiles/interazione_fra_specie.dir/Release
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Release/
-  TARGET_PDB = Release/interazione_fra_specie.pdb
 
 
 # =============================================================================
@@ -255,9 +249,8 @@ build Release/interazione_fra_specie: CXX_EXECUTABLE_LINKER__interazione_fra_spe
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Release
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Release/
   TARGET_FILE = Release/interazione_fra_specie
-  TARGET_PDB = Release/interazione_fra_specie.pdb
+  TARGET_PDB = interazione_fra_specie.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target simulation_test
@@ -274,8 +267,6 @@ build CMakeFiles/simulation_test.dir/Release/test.cpp.o: CXX_COMPILER__simulatio
   FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Release
   OBJECT_FILE_DIR = CMakeFiles/simulation_test.dir/Release
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Release/
-  TARGET_PDB = Release/simulation_test.pdb
 
 build CMakeFiles/simulation_test.dir/Release/simulation.cpp.o: CXX_COMPILER__simulation_test_unscanned_Release /Users/emma/progetto/simulation.cpp || cmake_object_order_depends_target_simulation_test_RELEASE
   DEFINES = -DCMAKE_INTDIR=\"Release\"
@@ -283,8 +274,6 @@ build CMakeFiles/simulation_test.dir/Release/simulation.cpp.o: CXX_COMPILER__sim
   FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Release
   OBJECT_FILE_DIR = CMakeFiles/simulation_test.dir/Release
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Release/
-  TARGET_PDB = Release/simulation_test.pdb
 
 build CMakeFiles/simulation_test.dir/Release/parameters.cpp.o: CXX_COMPILER__simulation_test_unscanned_Release /Users/emma/progetto/parameters.cpp || cmake_object_order_depends_target_simulation_test_RELEASE
   DEFINES = -DCMAKE_INTDIR=\"Release\"
@@ -292,8 +281,6 @@ build CMakeFiles/simulation_test.dir/Release/parameters.cpp.o: CXX_COMPILER__sim
   FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -O3 -DNDEBUG -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Release
   OBJECT_FILE_DIR = CMakeFiles/simulation_test.dir/Release
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Release/
-  TARGET_PDB = Release/simulation_test.pdb
 
 
 # =============================================================================
@@ -308,9 +295,8 @@ build Release/simulation_test: CXX_EXECUTABLE_LINKER__simulation_test_Release CM
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Release
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Release/
   TARGET_FILE = Release/simulation_test
-  TARGET_PDB = Release/simulation_test.pdb
+  TARGET_PDB = simulation_test.dbg
 
 
 #############################################

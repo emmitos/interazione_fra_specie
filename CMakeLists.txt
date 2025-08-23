@@ -49,7 +49,7 @@ target_link_libraries(interazione_fra_specie PRIVATE sfml-graphics)
 # per disabilitarlo, passare -DBUILD_TESTING=OFF a cmake durante la fase di configurazione (rimetti poi BUILD_TESTING)
 if (BUILD_TESTING)
 enable_testing()
-# aggiungi l'eseguibile progetto.t alla lista dei test
+  #add_executable(simulation_test test.cpp simulation.cpp parameters.cpp)
   add_test(NAME simulation_test COMMAND simulation_test)
   # aggiungi l'eseguibile progetto.t
   #add_executable(interazione_fra_specie.t)

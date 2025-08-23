@@ -218,8 +218,6 @@ build CMakeFiles/interazione_fra_specie.dir/Debug/main.cpp.o: CXX_COMPILER__inte
   INCLUDES = -isystem /opt/homebrew/opt/sfml@2/include
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
   OBJECT_FILE_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Debug/
-  TARGET_PDB = Debug/interazione_fra_specie.pdb
 
 build CMakeFiles/interazione_fra_specie.dir/Debug/simulation.cpp.o: CXX_COMPILER__interazione_fra_specie_unscanned_Debug /Users/emma/progetto/simulation.cpp || cmake_object_order_depends_target_interazione_fra_specie_DEBUG
   DEFINES = -DCMAKE_INTDIR=\"Debug\"
@@ -228,8 +226,6 @@ build CMakeFiles/interazione_fra_specie.dir/Debug/simulation.cpp.o: CXX_COMPILER
   INCLUDES = -isystem /opt/homebrew/opt/sfml@2/include
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
   OBJECT_FILE_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Debug/
-  TARGET_PDB = Debug/interazione_fra_specie.pdb
 
 build CMakeFiles/interazione_fra_specie.dir/Debug/parameters.cpp.o: CXX_COMPILER__interazione_fra_specie_unscanned_Debug /Users/emma/progetto/parameters.cpp || cmake_object_order_depends_target_interazione_fra_specie_DEBUG
   DEFINES = -DCMAKE_INTDIR=\"Debug\"
@@ -238,8 +234,6 @@ build CMakeFiles/interazione_fra_specie.dir/Debug/parameters.cpp.o: CXX_COMPILER
   INCLUDES = -isystem /opt/homebrew/opt/sfml@2/include
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
   OBJECT_FILE_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Debug/
-  TARGET_PDB = Debug/interazione_fra_specie.pdb
 
 
 # =============================================================================
@@ -256,9 +250,8 @@ build Debug/interazione_fra_specie: CXX_EXECUTABLE_LINKER__interazione_fra_speci
   OBJECT_DIR = CMakeFiles/interazione_fra_specie.dir/Debug
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/interazione_fra_specie.dir/Debug/
   TARGET_FILE = Debug/interazione_fra_specie
-  TARGET_PDB = Debug/interazione_fra_specie.pdb
+  TARGET_PDB = interazione_fra_specie.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target simulation_test
@@ -275,8 +268,6 @@ build CMakeFiles/simulation_test.dir/Debug/test.cpp.o: CXX_COMPILER__simulation_
   FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Debug
   OBJECT_FILE_DIR = CMakeFiles/simulation_test.dir/Debug
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Debug/
-  TARGET_PDB = Debug/simulation_test.pdb
 
 build CMakeFiles/simulation_test.dir/Debug/simulation.cpp.o: CXX_COMPILER__simulation_test_unscanned_Debug /Users/emma/progetto/simulation.cpp || cmake_object_order_depends_target_simulation_test_DEBUG
   DEFINES = -DCMAKE_INTDIR=\"Debug\"
@@ -284,8 +275,6 @@ build CMakeFiles/simulation_test.dir/Debug/simulation.cpp.o: CXX_COMPILER__simul
   FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Debug
   OBJECT_FILE_DIR = CMakeFiles/simulation_test.dir/Debug
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Debug/
-  TARGET_PDB = Debug/simulation_test.pdb
 
 build CMakeFiles/simulation_test.dir/Debug/parameters.cpp.o: CXX_COMPILER__simulation_test_unscanned_Debug /Users/emma/progetto/parameters.cpp || cmake_object_order_depends_target_simulation_test_DEBUG
   DEFINES = -DCMAKE_INTDIR=\"Debug\"
@@ -293,8 +282,6 @@ build CMakeFiles/simulation_test.dir/Debug/parameters.cpp.o: CXX_COMPILER__simul
   FLAGS = -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wshadow -Wimplicit-fallthrough -Wextra-semi -Wold-style-cast -fno-omit-frame-pointer -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -g -fsanitize=address,undefined -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Debug
   OBJECT_FILE_DIR = CMakeFiles/simulation_test.dir/Debug
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Debug/
-  TARGET_PDB = Debug/simulation_test.pdb
 
 
 # =============================================================================
@@ -310,9 +297,8 @@ build Debug/simulation_test: CXX_EXECUTABLE_LINKER__simulation_test_Debug CMakeF
   OBJECT_DIR = CMakeFiles/simulation_test.dir/Debug
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/simulation_test.dir/Debug/
   TARGET_FILE = Debug/simulation_test
-  TARGET_PDB = Debug/simulation_test.pdb
+  TARGET_PDB = simulation_test.dbg
 
 
 #############################################
