@@ -1,2 +1,2 @@
-simulation_test 4 0.0159773
+simulation_test 6 0.0364083
 ---
